@@ -103,3 +103,18 @@ templates:
       repo: examples
       ref: main
       subdir: bots/discord-bot-http
+  - id: slack-bot-http
+    title: "Slack bot"
+    description: "A Slack slash-command bot hosted on Neon Functions, with signed HTTP interactions, Block Kit buttons, user profiles, and command usage tracking in Neon Postgres."
+    tools:
+      - Slack
+      - Drizzle
+      - TypeScript
+    services:
+      - Postgres
+      - Functions
+    source:
+      owner: neondatabase
+      repo: examples
+      ref: main
+      subdir: bots/slack-bot-http

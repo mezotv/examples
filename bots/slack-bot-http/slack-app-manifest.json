@@ -1,0 +1,36 @@
+{
+  "display_information": {
+    "name": "Neon Slack Bot",
+    "description": "A Slack slash-command bot hosted on Neon Functions.",
+    "background_color": "#00e599"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "Neon Bot",
+      "always_online": false
+    },
+    "slash_commands": [
+      {
+        "command": "/neon",
+        "url": "https://your-slack-function-url.example.com/api/slack",
+        "description": "Run Neon Slack bot commands.",
+        "usage_hint": "ping | info | help | buttons | name [your name] | profile",
+        "should_escape": false
+      }
+    ]
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["commands"]
+    }
+  },
+  "settings": {
+    "interactivity": {
+      "is_enabled": true,
+      "request_url": "https://your-slack-function-url.example.com/api/slack"
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}
